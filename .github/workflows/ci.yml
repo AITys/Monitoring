@@ -33,7 +33,7 @@ jobs:
       - name: Deploy application
         run: |
           cd ~/Monitoring
-          git pull --ff-only origin main
+          GIT_SSH_COMMAND="ssh -i /home/sv1/.ssh/github_actions -o IdentitiesOnly=yes" git pull --ff-only origin main
           docker compose config -q
           docker compose up -d --remove-orphans
           docker compose ps
