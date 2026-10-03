@@ -21,3 +21,4 @@ Infrastructure monitoring platform built with Docker, Prometheus, Grafana and Py
 - Grafana
 - Python
 - Git
+> CI/CD pipeline is configured with GitHub Actions and a self-hosted runner.
